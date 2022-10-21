@@ -31,3 +31,8 @@ char* token_names[] = {
     "TOKEN_NULL",
     "TOKEN_ERROR"
 };
+
+typedef struct token_node_ {
+    struct token_node_* next;
+    token_t value;
+} token_node;
